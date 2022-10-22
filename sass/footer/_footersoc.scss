@@ -1,9 +1,14 @@
 .footer-soc-list {
     display: flex;
     gap: 10px;
-    margin-left: 68px; 
-     
-      
+    justify-content: center;
+
+    @media screen and(min-width: 1200px) {
+           margin-left: 68px;
+    
+    
+        }
+
 }
 
 
@@ -13,11 +18,17 @@
 .footer-soc {
     margin-bottom: 60px;
     text-align: center;    
-        @media screen and (max-width: 768px) {            
+        @media screen and (max-width: 767.98px) {            
             margin: auto;
             margin-bottom: 60px;   
 }
+         @media screen and(min-width: 768px) and(max-width:1199.98px) {
+            margin-left: 338px;
+            
+            
 
+
+}
 }
 .title-footer {
     font-weight: 700;
@@ -34,6 +45,14 @@
         margin-bottom: 20px;     
      
     }
+        @media screen and (max-width: 1200px) {
+            margin: auto;
+            margin-bottom: 20px;
+    
+        }
+
+
+
 }
 
 

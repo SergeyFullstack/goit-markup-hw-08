@@ -64,10 +64,34 @@
 }
 
 .flex-footer {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
 
+@media screen and(min-width: 768px) {
+        width: 768px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        margin: auto;
+    
+    
+    }
+
+
+
+
+
+
+
+
+@media screen and(min-width: 1200px) {
+        width: 1200px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+
+
+    }
+    
+    
 }
 
 .logo-web-footer {
@@ -82,15 +106,21 @@
 
 .footer-nav{
     margin-bottom: 60px;
-    text-align: center;
     
-        @media screen and (min-width:1px) and (max-width: 768px) {
-            text-align: center;
-            margin: auto;
-            margin-bottom: 60px;
-
-
-
+    
+@media screen and (min-width:1px) and (max-width: 768px) {
+ text-align: center;
+ margin: auto;
+ margin-bottom: 60px;         
 }
-}
+ @media screen and (min-width: 768px) {
+
+   text-align: left
+ }
+
+   
+
+ }
+
+
 

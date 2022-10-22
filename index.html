@@ -13,12 +13,11 @@
     integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
     crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./css/main.min.css">
-
 </head>
 <body>
     <!--Шапка сайта-->
     <header class="header-">
-        <!-- <div class="container wrapper">
+        <div class="container wrapper">
             <nav class="menu">
                 <a href="index.html" class="link" lang="en"><span class="logo-web">Web</span><span
                         class="logo-studio-header">Studio</span></a>
@@ -27,9 +26,9 @@
                     <li><a href="./portfolio.html" class="navigation">Портфоліо</a></li>
                     <li><a href="" class="navigation">Контакти</a></li>
                 </ul>                     
-            </nav> -->
+            </nav>
             <!-- Контакты-->
-            <!-- <ul class="header-contacts list">
+            <ul class="header-contacts list">
                 <li>
                     <a href="mailto:info@devstudio.com" class="link contacts-mail">
                         <svg class="contact-icon" width="16px" height="12px">
@@ -43,8 +42,72 @@
                     </svg>+38 096 111 11 11</a>
                 </li>
             </ul>
+            <button type="button" class="mobile-menu js-open-menu"><svg class="mobile-icon" width="40" height="40" aria-label="Перемикач мобільного меню">
+                <use class="mobile-icon-burger" href="./images/icons.svg#icon-burger"></use>
+            </svg>
+            </button>         
+
         </div>
-    </header> -->
+        <div class="mob-menu">
+            <div class="container js-menu-container ">
+                <button type="button" class="mob-menu-button js-close-menu">
+                    <svg class="mobile-menu-close" width="40" height="40">
+                        <use class="mobile-icon-close" href="./images/icons.svg#icon-mobile-close"></use>
+                    </svg>
+                </button>
+                <ul class="header-mob-menu list">
+                    <li class="header-mob-item">
+                        <a class="header-mob-link header-mob-link--current point link" href="./index.html"
+                            aria-current="page">Студія</a>
+                    </li>
+                    <li class="header-mob-item">
+                        <a class="header-mob-link point link" href="./portfolio.html">Портфоліо</a>
+                    </li>
+                    <li class="header-mob-item">
+                        <a href="#" class="header-mob-menu__link point link">Контакти</a>
+                    </li>
+                </ul>
+                <ul class="header-mobile-contacts list">
+                    <li class="header-mobile-item">
+                        <a class="header-mobile-link mobile-contacts-tel point link"
+                            href="tel:+380961111111">+38 096 111 11 11</a>
+                    </li>
+                    <li class="header-mobile-item">
+                        <a class="header-mobile-contacts__link header-mobile-contacts-mail point link"
+                            href="mailto:info@devstudio.com" lang="en">info@devstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="mob-socials-set list">
+                    <li class="mob-socials-item">
+                        <a href="#" class="mob-socials-set__link link" target="_blank" rel="noopener noreferrer nofollow"
+                            aria-label="Посилання на instagram">
+                            Instagram
+                        </a>
+                    </li>
+                    <li class="mob-socials-item">
+                        <a href="#" class="mob-socials-set__link link" target="_blank" rel="noopener noreferrer nofollow"
+                            aria-label="Посилання на twitter">
+                            Twitter
+                        </a>
+                    </li>
+                    <li class="mob-socials-item">
+                        <a href="#" class="mob-socials-set__link link" target="_blank" rel="noopener noreferrer nofollow"
+                            aria-label="Посилання на facebook">
+                            Facebook
+                        </a>
+                    </li>
+                    <li class="mob-socials-item">
+                        <a href="#" class="mob-socials-set__link link" target="_blank" rel="noopener noreferrer nofollow"
+                            aria-label="Посилання на linkedin">
+                            Linkedin
+                        </a>
+                    </li>
+                </ul>
+            
+            </div>
+        </div>
+        
+    </header>
     <!--Main-Уникальный контент-->
     <main>        
         <section class="hero overlay">
@@ -339,7 +402,7 @@
     </section>
     <!--Футер-->
     <footer class="footer section-footer ">        
-        <div class=" flex-footer container">
+        <div class=" flex-footer container footer-container">
             <div class="footer-nav">
                 <div class="link-footer-2">
                     <a href="" lang="en" class="link-footer"><span class="logo-web-footer">Web</span><span
@@ -453,5 +516,6 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>

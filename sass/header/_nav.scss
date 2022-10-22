@@ -2,12 +2,15 @@
     font-weight: 500;
     display: flex;
     align-items: center;
+    display: none;
+    
 
 }
 
 .site-nav {
     display: flex;
     margin-left: 93px;
+    display: none;
 }
 
 .site-nav a {
@@ -26,12 +29,14 @@
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
+    display: none;
 }
 
 .header-contacts {
     display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
+    display: none;
 }
 
 .header-contacts li {
