@@ -22,29 +22,22 @@
 .benefits-list-item {
     width: 270px;
     flex-wrap: wrap;
-    // text-align: justify;
+    text-align: justify;
 
 
 
     @media screen and (min-width:480px) and (max-width:767px) {
     
-            width: 450px;
-            height: 120px;}
+            width: 450px;}
+           
     
 
 
 
     @media screen and (min-width:768px) and (max-width:1199px) {
 
-            width: 354px;
-            height: 120px;
-
-
-
-
-
-}
-}
+            width: 354px;}       
+ }
 .benefits-icons {
     background: #f5f4fa;
     border-radius: 4px;

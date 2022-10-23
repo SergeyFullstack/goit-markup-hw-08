@@ -31,17 +31,22 @@
         @media screen and (max-width: 480px) {
             display: block;
     
-            &.is-open {
-                display: flex;
-                flex-direction: column;
-                opacity: 1;
-                visibility: visible;
-                pointer-events: initial;
-                transform: translateX(0);
-            }
-        }
+            
 
 }
+}
+.menu-container.is-open{
+
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: initial;
+    transform: translateX(0);
+
+}
+
+
 .mob-menu{
     position:fixed;
     background-color:white;
