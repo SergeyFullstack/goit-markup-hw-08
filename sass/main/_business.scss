@@ -1,6 +1,14 @@
 .business {
- padding-top: 94px;
- }
+    padding-top: 94px;
+
+    @media screen and (max-width:1999px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
+}
 
 .business__wrap {
     position: relative;

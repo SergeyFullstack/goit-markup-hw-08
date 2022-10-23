@@ -2,7 +2,7 @@
   margin-left: auto;
 }
 
-.mob-menu-container {
+.menu-container {
   position: fixed;
   top: 0;
   left: 0;
@@ -24,15 +24,15 @@
   transition-property: opacity, visibility, transform, -webkit-transform;
 }
 @media screen and (max-height: 500px) {
-  .mob-menu-container {
+  .menu-container {
     overflow-y: scroll;
   }
 }
 @media screen and (max-width: 480px) {
-  .mob-menu-container {
+  .menu-container {
     display: block;
   }
-  .mob-menu-container.is-open {
+  .menu-container.is-open {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
