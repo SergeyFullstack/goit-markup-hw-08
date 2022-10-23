@@ -20,11 +20,27 @@
 
 
 .benefits-list-item {
-    max-width: 270px;
+    width: 270px;
     flex-wrap: wrap;
-    text-align: justify;
+    // text-align: justify;
+
+
+
+    @media screen and (min-width:480px) and (max-width:767px) {
+    
+            width: 450px;
+            height: 120px;}
+    
+
+
+
     @media screen and (min-width:768px) and (max-width:1199px) {
-            flex-basis: calc(100% - 1 * 30px) / 2;
+
+            width: 354px;
+            height: 120px;
+
+
+
 
 
 }
@@ -46,5 +62,9 @@
     background: #f5f4fa;
     border-radius: 4px;
 
+    @media screen and (min-width:768px) and (max-width:1199px) {
     
+    
+    
+}
 }
