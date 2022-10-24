@@ -2,22 +2,22 @@
     margin-left: auto;
     background-color: white;
     border: none;
-       @media screen and (min-width:768px) {
+       @media screen and (min-width:767.99px) {
         display: none; 
    }
 
 }
-.menu-container{
+.mob-menu{
   position:fixed;
   top:0;
   left:0;
   width:100vw;
   height:100hv;
   z-index: 100; 
-//   transform:translateX(100%);
+  
 }  
 
-.menu-container.is-open{
+.mob-menu.is-open{
  transform:translateX(0);
 }
 
@@ -31,12 +31,17 @@
     height: 100vh;
     padding-top: 10px;
     padding-left: 15px;
+    transform: translateX(100%);
     >.container {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }  
   
+}
+
+.mob-menu.is-open {
+    transform: translateX(0);
 }
 .mob-menu-button{
     display: block;
