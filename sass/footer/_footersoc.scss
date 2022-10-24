@@ -17,13 +17,17 @@
 
 .footer-soc {
     margin-bottom: 60px;
-    text-align: center;    
+
+       
         @media screen and (max-width: 767.98px) {            
             margin: auto;
+            text-align: center;
+
             margin-bottom: 60px;   
 }
          @media screen and(min-width: 768px) and(max-width:1199.98px) {
-            margin-left: 338px;
+            // margin-left: 338px;
+            text-align: center;
             
             
 
