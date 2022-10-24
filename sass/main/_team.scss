@@ -1,0 +1,138 @@
+.team {
+    @media screen and(min-width: 480px) {
+            width: 480px;
+            padding-top: 60px;
+            padding-bottom: 60px;
+    
+    
+        }
+    
+        @media screen and(min-width: 768px) {
+            width: 768px;
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+    
+        @media screen and(min-width: 1200px) {
+            width: 1200px;
+            padding-top: 94px;
+            padding-bottom: 94px;
+    
+    
+        }
+
+ 
+}
+.member-team {
+    padding-bottom: 30px;
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+.team-soc-item {
+    display: block;
+
+}
+
+.listteam {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.team {
+    max-width: 1600px;
+    background: var(--secondary-background-color);
+    margin: auto;
+}
+
+.section-title-team {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.title-team {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    
+}
+
+
+.team-soc-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #AFB1B8;
+}
+
+.team-soc-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-soc-link:hover,
+.team-soc-link:focus {
+    background-color: var(--hover-focus-color);
+    color: white;
+}
+
+.team-soc-item svg {
+    fill: currentColor;
+}
+
+.list-team {
+    max-width: 270px;
+    text-align: center;
+    display: block;
+    word-break: keep-all;
+    background-color: #ffffff;
+    border-radius: 4px;
+}
+
+
+
+
+.team-item {
+    display: block;
+    background-color: #ffffff;
+    border-radius: 4px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+
+
+
+
+        flex-basis: calc((100% - 1 * 30px) / 2);
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - 3 * 30px) / 4);
+        margin-bottom: 0;
+
+
+    }
+
+}
+
+.team__images {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}

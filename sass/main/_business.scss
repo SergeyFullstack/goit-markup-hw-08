@@ -1,0 +1,59 @@
+.business {
+    padding-top: 94px;
+
+    @media screen and (max-width:1199px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
+}
+
+.business__wrap {
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+
+}
+        
+
+.business__text {
+    margin: 0;
+    display: flex;
+    width: 370px;
+    height: 70px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    bottom: 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    background: rgba(47, 48, 58, 0.8);
+}
+.business__image {
+    display: block;
+    border: none;
+}
+
+.business__list {
+    display: block;
+    display: flex;
+    gap: 30px;
+    max-height: 294px;
+}
+
+.business__title{
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+}
