@@ -29,37 +29,31 @@
         justify-content: flex-start;
         gap: 8px;
       
-        
-
-       
+              
     
     
         }
     
-        @media screen and(min-width: 767px) and(min-width: 1199px) {
+        @media screen and(min-width: 768px) and(min-width: 1199px) {
         display: flex;
         gap: 8px;
-        padding-left: 297px;
-        padding-right: 298px;
-        padding:auto;
+        padding-left: 96px;
+        padding-right: 97px;
+       
+       
             
 
         }
     
         @media screen and(min-width: 1200px) {
             display: flex;
-                gap: 8px;
-                padding-left: 297px;
-                padding-right: 298px;
+            gap: 8px;
+            padding-left: 297px;
+            padding-right: 298px;
            
     
     
         }
-
-
-
-
-
 
 
 
