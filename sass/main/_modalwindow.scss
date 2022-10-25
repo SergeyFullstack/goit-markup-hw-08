@@ -183,10 +183,22 @@
 }
 
 .modal-link {
+
+
+
+
+
+
+
     color: #2196f3;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+
+
+
+
+
 }
 
 .checkbox {
@@ -223,10 +235,26 @@
 
 .accept-label {
     margin-left: 7px;
-    font-size: 14px;
-    line-height: 1.71;
-    display: flex;
+     font-size: 12px;
+    line-height: calc(14/12);
+    
     letter-spacing: 0.03em;
+    display: flex;
+    
+
+
+    @media screen and (min-width:1200px) {
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+           
+        }
+
+
+
+
+
+
 }
 
 .text-span {

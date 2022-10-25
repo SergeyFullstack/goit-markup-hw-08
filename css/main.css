@@ -31,8 +31,7 @@ html {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  margin-right: auto;
-  margin-left: auto;
+  margin: auto;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -75,6 +74,11 @@ body {
   line-height: 1.18;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+@media screen and (max-width: 768px) {
+  .title {
+    text-align: center;
+  }
 }
 
 h1,
@@ -238,6 +242,12 @@ ul {
 @media screen and (max-width: 768px) {
   .header-contacts {
     display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .header-contacts {
+    padding-top: 21px;
+    padding-bottom: 21px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -415,15 +425,37 @@ ul {
   }
 }
 
+@media screen and (min-width: 320px) and (max-width: 1199.99px) {
+  .hero-container {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-container {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+
 .hero__title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   color: var(--secondary-text-color);
-  padding-top: 200px;
   letter-spacing: 0.06em;
   text-align: center;
   text-transform: uppercase;
+}
+@media screen and (min-width: 200px) and (max-width: 1199.99px) {
+  .hero__title {
+    ont-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+  }
 }
 
 .hero__button {
@@ -441,7 +473,6 @@ ul {
   margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 200px;
   letter-spacing: 0.06em;
   word-break: keep-all;
   -webkit-hyphens: none;
@@ -477,6 +508,12 @@ ul {
   background-color: #ffffff;
   max-width: 1600px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767.99x) {
+  .ben-title {
+    text-align: right;
+  }
 }
 
 .benefits-list-item {
@@ -517,9 +554,6 @@ ul {
   margin-bottom: 30px;
   background: #f5f4fa;
   border-radius: 4px;
-}
-.business {
-  padding-top: 94px;
 }
 @media screen and (max-width: 1199px) {
   .business {
@@ -594,6 +628,7 @@ ul {
     width: 480px;
     padding-top: 60px;
     padding-bottom: 60px;
+    background: var(--secondary-background-color);
   }
 }
 @media screen and (min-width: 768px) {
@@ -601,6 +636,7 @@ ul {
     width: 768px;
     padding-top: 60px;
     padding-bottom: 60px;
+    background: var(--secondary-background-color);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -636,14 +672,22 @@ ul {
 }
 
 .team {
-  max-width: 1600px;
+  width: 100%;
   background: var(--secondary-background-color);
-  margin: auto;
 }
 
 .section-title-team {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: center;
+  font-size: 28px;
+  line-height: 1.17;
+}
+@media screen and (min-width: 1200px) {
+  .section-title-team {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }
 
 .title-team {
@@ -739,12 +783,19 @@ ul {
 
 .clients__title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   color: #212121;
+}
+@media screen and (min-width: 1200px) {
+  .clients__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }
 
 .clients__list {
@@ -932,9 +983,6 @@ ul {
   text-decoration: none;
 }
 
-.footer-nav {
-  margin-bottom: 60px;
-}
 @media screen and (min-width: 1px) and (max-width: 768px) {
   .footer-nav {
     text-align: center;
@@ -964,9 +1012,6 @@ ul {
   }
 }
 
-.footer-soc {
-  margin-bottom: 60px;
-}
 @media screen and (max-width: 767.98px) {
   .footer-soc {
     text-align: center;
@@ -1710,12 +1755,19 @@ ul {
 
 .accept-label {
   margin-left: 7px;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.03em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  letter-spacing: 0.03em;
+}
+@media screen and (min-width: 1200px) {
+  .accept-label {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
 }
 
 .text-span {
@@ -1735,8 +1787,8 @@ ul {
   margin-left: auto;
   background-color: white;
   border: none;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 @media screen and (min-width: 767.99px) {
   .mobile-menu {
@@ -1751,6 +1803,18 @@ ul {
   width: 100vw;
   height: 100hv;
   z-index: 100;
+  overflow-x: hidden;
+}
+
+.menu-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
 }
 
 .mob-menu.is-open {
@@ -1772,6 +1836,11 @@ ul {
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
 }
+@media screen and (min-width: 767.99px) {
+  .mob-menu {
+    display: none;
+  }
+}
 
 > .container {
   display: -webkit-box;
@@ -1791,6 +1860,11 @@ ul {
     display: none;
   }
 }
+@media screen and (min-width: 767.99px) {
+  .mob-menu {
+    display: none;
+  }
+}
 .mob-menu-button {
   display: block;
   margin-left: auto;
@@ -1799,7 +1873,7 @@ ul {
 }
 
 .header-mob-menu {
-  margin-bottom: 302px;
+  margin-bottom: auto;
   font-weight: 500;
   font-size: 40px;
   line-height: 1.175;

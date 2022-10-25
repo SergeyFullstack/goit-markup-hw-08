@@ -32,8 +32,9 @@ html {
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
-    margin-right: auto;
-    margin-left: auto;
+    margin: auto;
+    // margin-right: auto;
+    // margin-left: auto;
     @media screen and (min-width: 480px) {
     width: 480px;        
     }
@@ -64,6 +65,13 @@ body {
 }
 
 .title {
+    @media screen and (max-width: 768px) {
+            
+            text-align: center;}
+    
+
+
+   
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 14px;
