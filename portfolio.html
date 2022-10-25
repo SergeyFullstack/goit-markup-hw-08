@@ -9,41 +9,109 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-     href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-     rel="stylesheet">
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-     integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-     crossorigin="anonymous" referrerpolicy="no-referrer">
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
+
 <body>
     <!--Шапка сайта-->
-    <header class="header">
+    <header class="header-">
         <div class="container wrapper">
             <nav class="menu">
                 <a href="index.html" class="link" lang="en"><span class="logo-web">Web</span><span
                         class="logo-studio-header">Studio</span></a>
                 <ul class="site-nav list">
-                    <li><a href="./index.html" class="navigation">Студія</a></li>
-                    <li class="site-nav-item"><a href="./portfolio.html" class="navigation current link-current">Портфоліо</a></li>
+                    <li class="site-nav-item"><a href="./index.html "
+                            class="navigation ">Студія</a></li>
+                    <li><a href="./portfolio.html" class="navigation link-current  current">Портфоліо</a></li>
                     <li><a href="" class="navigation">Контакти</a></li>
                 </ul>
             </nav>
-            <!--Контакты-->
+            <!-- Контакты-->
             <ul class="header-contacts list">
-                <li>                                               
-                    <a href="mailto:info@devstudio.com" class="contacts-mail link"><svg class="contact-icon" width="16px" height="12px">
-                        <use href="./images/icons.svg#icon-envelope"></use>
-                    </svg>info@devstudio.com</a>            
-                </li>
                 <li>
-                    
-                    <a href="tel:+380961111111" class="contacts-tel link"><svg class="contact-icon" width="10px" height="16px">
-                        <use href="./images/icons.svg#icon-smartphone"></use>
-                    </svg>+38 096 111 11 11</a>                
+                    <a href="mailto:info@devstudio.com" class="link contacts-mail">
+                        <svg class="contact-icon" width="16px" height="12px">
+                            <use href="./images/icons.svg#icon-envelope"></use>
+
+                        </svg>info@devstudio.com
+                    </a>
                 </li>
-            </ul>        
+                <li><a href="tel:+380961111111" class="link contacts-tel"><svg class="contact-icon" width="10px"
+                            height="16px">
+                            <use href="./images/icons.svg#icon-smartphone"></use>
+                        </svg>+38 096 111 11 11</a>
+                </li>
+            </ul>
+            <button type="button" class="mobile-menu js-open-menu"><svg class="mobile-icon" width="40" height="40"
+                    aria-label="Перемикач мобільного меню">
+                    <use class="mobile-icon-burger" href="./images/icons.svg#icon-burger"></use>
+                </svg>
+            </button>
+
         </div>
+        <div class="mob-menu js-menu-container" id=mob-menu-button>
+            <div class="container menu-container js-menu-container" id="mobile-menu">
+                <button type="button" class="mob-menu-button js-close-menu">
+                    <svg class="mobile-menu-close" width="40" height="40">
+                        <use class="mobile-icon-close" href="./images/icons.svg#icon-mobile-close"></use>
+                    </svg>
+                </button>
+                <ul class="header-mob-menu list">
+                    <li class="header-mob-item">
+                        <a class="header-mob-link current link" href="./index.html" aria-current="page">Студія</a>
+                    </li>
+                    <li class="header-mob-item">
+                        <a class="header-mob-link point link" href="./portfolio.html">Портфоліо</a>
+                    </li>
+                    <li class="header-mob-item">
+                        <a href="#" class="header-mob-menu__link point link">Контакти</a>
+                    </li>
+                </ul>
+                <ul class="header-mobile-contacts list">
+                    <li class="header-mobile-item">
+                        <a class="header-mobile-link mobile-contacts-tel point link" href="tel:+380961111111">+38 096
+                            111 11 11</a>
+                    </li>
+                    <li class="header-mobile-item">
+                        <a class="header-mobile-contacts__link header-mobile-contacts-mail point link"
+                            href="mailto:info@devstudio.com" lang="en">info@devstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="mob-socials-set list">
+                    <li class="mob-socials-item">
+                        <a href="#" class="mob-socials-set__link link" target="_blank"
+                            rel="noopener noreferrer nofollow" aria-label="Посилання на instagram">
+                            Instagram
+                        </a>
+                    </li>
+                    <li class="mob-socials-item">
+                        <a href="#" class="mob-socials-set__link link" target="_blank"
+                            rel="noopener noreferrer nofollow" aria-label="Посилання на twitter">
+                            Twitter
+                        </a>
+                    </li>
+                    <li class="mob-socials-item">
+                        <a href="#" class="mob-socials-set__link link" target="_blank"
+                            rel="noopener noreferrer nofollow" aria-label="Посилання на facebook">
+                            Facebook
+                        </a>
+                    </li>
+                    <li class="mob-socials-item">
+                        <a href="#" class="mob-socials-set__link link" target="_blank"
+                            rel="noopener noreferrer nofollow" aria-label="Посилання на linkedin">
+                            Linkedin
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
     </header>
     <!--Main-Уникальный контент-->
     <main>
@@ -63,13 +131,37 @@
                     <li class="projects-list list">
                         <a class="link-projects link" href="">
                             <div class="projects-wrap">
-                                <img class="image" src="./images/img5.jpg" alt="img5" width="370">
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="
+                                                          ./images/portfolio/tech-370-min.jpg 1x,
+                                                          ./images/portfolio/tech-740-min.jpg 2x
+                                                        " type="image/jpg" />
+                                    <source media="(min-width: 768px)" srcset="
+                                                          ./images/portfolio/tech-354-min.jpg 1x,
+                                                          ./images/portfolio/tech-708-min.jpg 2x
+                                                        " type="image/jpg" />
+                                    <source media="(max-width: 767px)" srcset="
+                                                          ./images/portfolio/tech-450-min.jpg 1x,
+                                                          ./images/portfolio/tech-900-min.jpg 2x
+                                                        " type="image/jpg" />
+                                    <img class="project-cards__img" srcset="
+                                                          ./images/portfolio/tech-370-min.jpg 370w,
+                                                          ./images/portfolio/tech-740-min.jpg 740w,
+                                                          ./images/portfolio/tech-354-min.jpg 354w,
+                                                          ./images/portfolio/tech-708-min.jpg 708w,
+                                                          ./images/portfolio/tech-450-min.jpg 450w,
+                                                          ./images/portfolio/tech-900-min.jpg 900w
+                                                        "
+                                        sizes="(min-width: 1199.99px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw"
+                                        src="./images/portfolio/tech-450-min.jpg" title="Лаптоп з зображенням веб-сайту на екрані"
+                                        alt="Лаптоп з зображенням веб-сайту на екрані" width="370" height="294" />
+                                </picture>
+                               
                                 <p class="projects-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                     дозволить
                                     відвідувачу отримати
                                     вичерпні відомості про компанію чи приватну особу.</p>
-                            </div>
-                           
+                            </div>                           
                             <div class="projects-item">
                                 <h2 class="title-projects">Технокряк</h2>
                                 <p class="text-projects">Веб-сайт</p>
@@ -79,13 +171,31 @@
                     <li class="projects-list list">
                         <a class="link-projects link" href="">
                             <div class="projects-wrap">
-                                <img class="image" src="./images/img5.jpg" alt="img5" width="370">
+                              
                                 <p class="projects-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
                                     це
                                     дозволить
                                     відвідувачу отримати
                                     вичерпні відомості про компанію чи приватну особу.</p>
                             </div>
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="
+                                                      ./images/portfolio/game-370-min.jpg 1x,
+                                                      ./images/portfolio/game-740-min.jpg 2x
+                                                    " type="image/jpg" />
+                                <source media="(min-width: 768px)" srcset="
+                                                      ./images/portfolio/game-354-min.jpg 1x,
+                                                      ./images/portfolio/game-708-min.jpg 2x
+                                                    " type="image/jpg" />
+                                <source media="(max-width: 767px)" srcset="
+                                                      ./images/portfolio/game-450-min.jpg 1x,
+                                                      ./images/portfolio/game-900-min.jpg 2x
+                                                    " type="image/jpg" />
+                            
+                                <img class="project-cards__img" src="./images/portfolio/game-450-min.jpg"
+                                    title="Дизайн постеру New Orlean vs Golden Star. Гра двох баскетболістів."
+                                    alt="Дизайн постеру New Orlean vs Golden Star. Гра двох баскетболістів." width="370" height="294" />
+                            </picture>
                     
                             <div class="projects-item">
                                 <h2 class="title-projects">Постер New Orlean vs Golden Star</h2>
@@ -96,7 +206,25 @@
                     <li class="projects-list list">
                         <a class="link-projects link" href="">
                             <div class="projects-wrap">
-                                <img class="image" src="./images/img7.jpg" alt="img7" width="370">
+                                <picture>
+                                    <source media="(min-width: 1199.99px)" srcset="
+                                                          ./images/portfolio/seafood-370-min.jpg 1x,
+                                                          ./images/portfolio/seafood-740-min.jpg 2x
+                                                        " type="image/jpg" />
+                                    <source media="(min-width: 768px)" srcset="
+                                                          ./images/portfolio/seafood-354-min.jpg 1x,
+                                                          ./images/portfolio/seafood-708-min.jpg 2x
+                                                        " type="image/jpg" />
+                                    <source media="(max-width: 767px)" srcset="
+                                                          ./images/portfolio/seafood-450-min.jpg 1x,
+                                                          ./images/portfolio/seafood-900-min.jpg 2x
+                                                        " type="image/jpg" />
+                                
+                                    <img class="project-cards__img" src="./images/portfolio/seafood-450-min.jpg"
+                                        title="Логотип додатку ресторану морської їжі" alt="Логотип додатку ресторану морської їжі" width="370"
+                                        height="294" />
+                                </picture>
+                                
                                 <p class="projects-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                     дозволить
                                     відвідувачу отримати
@@ -111,7 +239,25 @@
                     <li class="projects-list list ">
                         <a class="link-projects link" href="">
                             <div class="projects-wrap">
-                                <img class="image" src="./images/img8.jpg" alt="img8" width="370">
+                                <picture>
+                                    <source media="(min-width: 1199.99px)" srcset="
+                                                          ./images/portfolio/headphone-370-min.jpg 1x,
+                                                          ./images/portfolio/headphone-740-min.jpg 2x
+                                                        " type="image/jpg" />
+                                    <source media="(min-width: 768px)" srcset="
+                                                          ./images/portfolio/headphone-354-min.jpg 1x,
+                                                          ./images/portfolio/headphone-708-min.jpg 2x
+                                                        " type="image/jpg" />
+                                    <source media="(max-width: 767px)" srcset="
+                                                          ./images/portfolio/headphone-450-min.jpg 1x,
+                                                          ./images/portfolio/headphone-900-min.jpg 2x
+                                                        " type="image/jpg" />
+                                
+                                    <img class="project-cards__img" src="./images/portfolio/headphone-450-min.jpg"
+                                        title="Накладні бездротові чорні навушники" alt="Накладні бездротові чорні навушники" width="370"
+                                        height="294" />
+                                </picture>
+                                
                                 <p class="projects-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                     дозволить
                                     відвідувачу отримати
@@ -126,7 +272,25 @@
                     <li class="projects-list list">
                         <a class="link-projects link" href="">
                             <div class="projects-wrap">
-                                <img class="image" src="./images/img9.jpg" alt="img9" width="370">
+                                <picture>
+                                    <source media="(min-width: 1199.99px)" srcset="
+                                                          ./images/portfolio/boxes-370-min.jpg 1x,
+                                                          ./images/portfolio/boxes-740-min.jpg 2x
+                                                        " type="image/jpg" />
+                                    <source media="(min-width: 768px)" srcset="
+                                                          ./images/portfolio/boxes-354-min.jpg 1x,
+                                                          ./images/portfolio/boxes-708-min.jpg 2x
+                                                        " type="image/jpg" />
+                                    <source media="(max-width: 767px)" srcset="
+                                                          ./images/portfolio/boxes-450-min.jpg 1x,
+                                                          ./images/portfolio/boxes-900-min.jpg 2x
+                                                        " type="image/jpg" />
+                                
+                                    <img class="project-cards__img" src="./images/portfolio/boxes-450-min.jpg"
+                                        title="Дві невеликих дизайнерських коробки: біла та темний беж"
+                                        alt="Дві невеликих дизайнерських коробки: біла та темний беж" width="370" height="294" />
+                                </picture>
+                                
                                 <p class="projects-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                     дозволить
                                     відвідувачу отримати
@@ -141,7 +305,24 @@
                     <li class="projects-list list">
                         <a class="link-projects link" href="">
                             <div class="projects-wrap">
-                                <img class="image" src="./images/img10.jpg" alt="img10" width="370">
+                                <picture>
+                                    <source media="(min-width: 1199.99px)" srcset="
+                                                          ./images/portfolio/monitor-370-min.jpg 1x,
+                                                          ./images/portfolio/monitor-740-min.jpg 2x
+                                                        " type="image/jpg" />
+                                    <source media="(min-width: 768px)" srcset="
+                                                          ./images/portfolio/monitor-354-min.jpg 1x,
+                                                          ./images/portfolio/monitor-708-min.jpg 2x
+                                                        " type="image/jpg" />
+                                    <source media="(max-width: 767px)" srcset="
+                                                          ./images/portfolio/monitor-450-min.jpg 1x,
+                                                          ./images/portfolio/monitor-900-min.jpg 2x
+                                                        " type="image/jpg" />
+                                
+                                    <img class="project-cards__img" src="./images/portfolio/monitor-450-min.jpg" title="Веб-сайт на экрані монітору"
+                                        alt="Веб-сайт на экрані монітору" width="370" height="294" />
+                                </picture>
+                               
                                 <p class="projects-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                     дозволить
                                     відвідувачу отримати
@@ -156,7 +337,24 @@
                     <li class="projects-list list">
                         <a class="link" href="">
                             <div class="projects-wrap">
-                                <img class="image" src="./images/img11.jpg" alt="img11" width="370">
+                                <picture>
+                                    <source media="(min-width: 1199.99px)" srcset="
+                                                          ./images/portfolio/journal-370-min.jpg 1x,
+                                                          ./images/portfolio/journal-740-min.jpg 2x
+                                                        " type="image/jpg" />
+                                    <source media="(min-width: 768px)" srcset="
+                                                          ./images/portfolio/journal-354-min.jpg 1x,
+                                                          ./images/portfolio/journal-708-min.jpg 2x
+                                                        " type="image/jpg" />
+                                    <source media="(max-width: 767px)" srcset="
+                                                          ./images/portfolio/journal-450-min.jpg 1x,
+                                                          ./images/portfolio/journal-900-min.jpg 2x
+                                                        " type="image/jpg" />
+                                
+                                    <img class="project-cards__img" src="./images/portfolio/journal-450-min.jpg" title="Розворот журналу"
+                                        alt="Розворот журналу" width="370" height="294" />
+                                </picture>
+                               
                                 <p class="projects-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                     дозволить
                                     відвідувачу отримати
@@ -171,7 +369,24 @@
                     <li class="projects-list list">
                         <a class="link" href="">
                             <div class="projects-wrap">
-                                <img class="image" src="./images/img12.jpg" alt="img12" width="370">
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="
+                                                          ./images/portfolio/label-370-min.jpg 1x,
+                                                          ./images/portfolio/label-740-min.jpg 2x
+                                                        " type="image/jpg" />
+                                    <source media="(min-width: 768px)" srcset="
+                                                          ./images/portfolio/label-354-min.jpg 1x,
+                                                          ./images/portfolio/label-708-min.jpg 2x
+                                                        " type="image/jpg" />
+                                    <source media="(max-width: 767px)" srcset="
+                                                          ./images/portfolio/label-450-min.jpg 1x,
+                                                          ./images/portfolio/label-900-min.jpg 2x
+                                                        " type="image/jpg" />
+                                
+                                    <img class="project-cards__img" src="./images/portfolio/label-450-min.jpg" title="Біла бірка з надписом Lab El Tag"
+                                        alt="Біла бірка з надписом Lab El Tag" width="370" height="294" />
+                                </picture>
+                                
                                 <p class="projects-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                     дозволить
                                     відвідувачу отримати
@@ -186,7 +401,24 @@
                     <li class="projects-list list">
                         <a class="link" href="">
                             <div class="projects-wrap">
-                                <img class="image" src="./images/img13.jpg" alt="img13" width="370">
+                                <picture>
+                                    <source media="(min-width: 1199.99px)" srcset="
+                                                          ./images/portfolio/laptop-370.jpg 1x,
+                                                          ./images/portfolio/laptop-740.jpg 2x
+                                                        " type="image/jpg" />
+                                    <source media="(min-width: 768px)" srcset="
+                                                          ./images/portfolio/laptop-354.jpg 1x,
+                                                          ./images/portfolio/laptop-708.jpg 2x
+                                                        " type="image/jpg" />
+                                    <source media="(max-width: 767px)" srcset="
+                                                          ./images/portfolio/laptop-450.jpg 1x,
+                                                          ./images/portfolio/laptop-900.jpg 2x
+                                                        " type="image/jpg" />
+                                
+                                    <img class="project-cards__img" src="./images/portfolio/laptop-450.jpg"
+                                        title="Зображення чоловічих рук, які друкують на клавиатурі ноутбука"
+                                        alt="Зображення чоловічих рук, які друкують на клавиатурі ноутбука" width="370" height="294" />
+                                </picture>
                                 <p class="projects-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                     дозволить
                                     відвідувачу отримати
@@ -203,11 +435,11 @@
         </section>        
     </main>
     <!--Футер-->
-    <footer class="footer section-footer">
-        <div class="container flex-footer">
-            <div>
+    <footer class="footer section-footer ">
+        <div class=" flex-footer container footer-container">
+            <div class="footer-nav">
                 <div class="link-footer-2">
-                    <a href="" lang="en" class="link-footer"><span class="logo-web">Web</span><span
+                    <a href="" lang="en" class="link-footer"><span class="logo-web-footer">Web</span><span
                             class="logo-studio-footer">Studio</span></a>
                 </div>
                 <address>
@@ -265,7 +497,66 @@
             </div>
         </div>
     </footer>
-
-   
-    </body>    
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
+            <button type="button" class="modal-close" data-modal-close>
+                <svg class="modal-icon-close" width="18" height="17">
+                    <use class="" href="./images/icons.svg#icon-close-black"></use>
+                </svg>
+            </button>
+            <form class="modal-form">
+                <div class="modal-field">
+                    <label for="user-name" class="modal-label">Ім'я
+                        <input type="text" name="user-name" class="modal-input" id="user-name">
+                        <svg class="modal-icon" width="18" height="18">
+                            <use class="#" href="./images/icons.svg#icon-person"></use>
+                        </svg>
+                    </label>
+                </div>
+                <div class="modal-field">
+                    <label for="user-tel" class="modal-label">Телефон
+                        <input type="tel" name="user-tel" class="modal-input"
+                            pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" id="user-tel">
+                        <svg class="modal-icon" width="18" height="18">
+                            <use class="#" href="./images/icons.svg#icon-phone"></use>
+                        </svg>
+                    </label>
+                </div>
+                <div class="modal-field">
+                    <label for="user-mail" class="modal-label">Пошта
+                        <input type="email" name="user-email" class="modal-input" id="user-mail">
+                        <svg class="modal-icon" width="18" height="18">
+                            <use class="#" href="./images/icons.svg#icon-email"></use>
+                        </svg>
+                    </label>
+                </div>
+                <label class="modal-label">Коментар
+                    <textarea name="user-text" id="user-text" class="modal-text" placeholder="Введіть текст"></textarea>
+                </label>
+                <div class="accept">
+                    <input class="accept-input title-none" type="checkbox" name="accept" id="accept" value="true">
+                    <div class="checkbox">
+                        <svg class="icon-checkbox" width="16" height="15">
+                            <use class="check" href="./images/icons.svg#icon-vector-2"></use>
+                        </svg>
+                    </div>
+                    <label class="accept-label" for="accept"><span class="text-span">Погоджуюся з розсилкою та приймаю <a
+                                class="text-link link" href="#"> Умови договору</a></span>
+    
+                    </label>
+                </div>
+    
+                <button type="submit" class="modal-button">Відправити</button>
+            </form>
+        </div>
+    </div>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+    </body>
+    
     </html>
+    

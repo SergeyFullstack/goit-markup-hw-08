@@ -1235,19 +1235,41 @@ ul {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.flex-filers {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 8px;
-  padding-left: 297px;
-  padding-right: 298px;
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .flex-filers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    gap: 8px;
+  }
 }
 @media screen and (min-width: 767px) and (min-width: 1199px) {
   .flex-filers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 8px;
+    padding-left: 297px;
+    padding-right: 298px;
     padding: auto;
   }
 }
+@media screen and (min-width: 1200px) {
+  .flex-filers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 8px;
+    padding-left: 297px;
+    padding-right: 298px;
+  }
+}
+
 .button-filter:hover,
 .button-filter:focus-within {
   background-color: var(--hover-focus-color);
@@ -1378,6 +1400,18 @@ ul {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .projects-list {
+    margin-right: 0;
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .projects-list {
+    -ms-flex-preferred-size: calc((100% - 60px) / 3);
+        flex-basis: calc((100% - 60px) / 3);
+  }
+}
 
 .list-filters {
   display: -webkit-box;
@@ -1393,6 +1427,19 @@ ul {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 30px;
+}
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .projects-list-ul {
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .projects-list-ul {
+    -ms-flex-preferred-size: calc((100% - 60px) / 3);
+        flex-basis: calc((100% - 60px) / 3);
+  }
 }
 
 .projects-list:hover,

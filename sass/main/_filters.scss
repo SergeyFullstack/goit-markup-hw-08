@@ -18,25 +18,39 @@
 }
 
 .flex-filers {
-    display: flex;
-    gap: 8px;
-    padding-left: 297px;
-    padding-right: 298px;
+    // display: flex;
+    // gap: 8px;
+    // padding-left: 297px;
+    // padding-right: 298px;
 
-    @media screen and(min-width: 480px) {
+    @media screen and(min-width: 320px) and(max-width: 767px)     {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 8px;
+      
+        
 
-           
+       
     
     
         }
     
         @media screen and(min-width: 767px) and(min-width: 1199px) {
+        display: flex;
+        gap: 8px;
+        padding-left: 297px;
+        padding-right: 298px;
         padding:auto;
             
 
         }
     
         @media screen and(min-width: 1200px) {
+            display: flex;
+                gap: 8px;
+                padding-left: 297px;
+                padding-right: 298px;
            
     
     
