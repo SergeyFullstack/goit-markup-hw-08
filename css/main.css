@@ -139,6 +139,13 @@ ul {
   display: -ms-flexbox;
   display: flex;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 
 .text {
   -webkit-box-pack: justify;
@@ -210,12 +217,6 @@ ul {
     display: none;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199.98px) {
-  .site-nav {
-    margin-right: 96px;
-  }
-}
-
 .site-nav a {
   text-decoration: none;
 }
@@ -353,6 +354,9 @@ ul {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .header-contacts {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-left: auto;
   }
 }

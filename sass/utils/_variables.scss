@@ -142,7 +142,21 @@ ul {
 
 .wrapper {
     display: flex;
-}
+
+    @media screen and (min-width:768px) and (max-width:1199px) {
+            display: flex;
+    
+    
+        }
+    }
+
+
+
+
+
+
+
+
 
 .text {
     justify-content: space-between;
