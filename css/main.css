@@ -259,8 +259,10 @@ ul {
   }
 }
 
-.header-contacts li {
-  margin-right: 50px;
+@media screen and (min-width: 1200px) {
+  .header-contacts li {
+    margin-right: 50px;
+  }
 }
 
 .header-contacts li:last-child {
